@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+    background-color: rgba(211, 209, 209, 0.555);
+    background: url(cool-background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+}
+  
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.current{
+    background: #848483;
+  }
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+}
+  
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.background{
+    float: left;
+    width: fit-content;
+    height: 100vh; 
+    pointer-events: none; 
+  }
+.indexContainer1 {
+    object-fit: cover;
+    width: fit-content;
+    height: min-content;
+}
+.firstTxt {
+    position: absolute;
+    top: 1em;
+    left: 4vw;
+    color: #333333;
+    font-size: 4em;
+    animation-name: title;
+    animation-duration: 2s;
+}
+@keyframes title {
+  0%   {left:-500px; top:0px;}
+}
+.secondTxt {
+    position: absolute;
+    top: 5.5em;
+    left: 25vw;
+    font-size: 2em;
+    color: #333333;
+    animation-name: username;
+    animation-duration: 2s;
+}
+@keyframes username {
+  0%   {left:-500px; top:15vh;}
+}
+#boxLogGallery{
+    position: relative;
+    padding: 10px;
+    margin: 5px;
+    width: 60vw;
+    max-width: 50vw;
+    max-height: 60vh;
+    top: 20vh;
+    left: 25vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 59px 12px black;
+    animation-name: inForm;
+    animation-duration: 3s;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: auto;
+}
+@keyframes inForm {
+    0%   {left:155em; top:25vh;}
+  }
+.footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: auto;
+}

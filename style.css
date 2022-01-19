@@ -1,0 +1,255 @@
+*{
+  box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll; 
+    background-color: rgba(211, 209, 209, 0.555);
+    background: url(cool-background.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#boxLog{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    width: 30vw;
+    min-height: 35vh;
+    max-height: 90vh;
+    top: 25vh;
+    left: 50vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 1px 1px 59px 12px black;
+    animation-name: inForm;
+    animation-duration: 3s;
+    color: white;
+}
+#boxLogOrder{
+    position: absolute;
+    padding: 10px;
+    margin: 5px;
+    width: 30vw;
+    min-height: 35vh;
+    max-height: 60vh;
+    top: 25vh;
+    left: 50vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    box-shadow: 1px 1px 59px 12px black;
+    animation-name: inForm;
+    animation-duration: 3s;
+    color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+}
+@keyframes inForm {
+  0%   {left:155em; top:25vh;}
+}
+#boxLog > input{
+    display: flex;
+    width: 20vw;
+    justify-content: center;
+    padding: 2px;
+    margin: 2px;
+}
+#boxLog > .submitLog{
+    width: 5vw;
+    height: 3vh;
+}
+#boxLog > a{
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+#boxLog > form{
+  height: 55vh;
+  width: 25vw;
+  position: relative;
+  top: 3em;
+  text-align: center;
+  max-height: max-content;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.background{
+  width: 100vw;
+  height: 100vh; 
+  pointer-events: none; 
+}
+.container{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: fit-content;
+  height: 100vh;
+}
+.indexContainer1 {
+    object-fit: cover;
+    width: fit-content;
+    height: min-content;
+}
+.firstTxt {
+    position: absolute;
+    top: 5px;
+    left: 4vw;
+    color: #333333;
+    font-size: 4em;
+    animation-name: title;
+    animation-duration: 2s;
+}
+@keyframes title {
+  0%   {left:-500px; top:0px;}
+}
+.stayTxt{
+    position: absolute;
+    top: 1px;
+    left: 4vw;
+    color: #333333;
+    font-size: 4em;
+}
+.secondTxt {
+    position: absolute;
+    top: 15vh;
+    left: 25vw;
+    font-size: 2em;
+    color: #333333;
+    animation-name: username;
+    animation-duration: 2s;
+}
+@keyframes username {
+  0%   {left:-500px; top:15vh;}
+}
+.BackTxt {
+    position: absolute;
+    top: 15vh;
+    left: -500px;
+    font-size: 2em;
+    color: #333333;
+    animation-name: BackTxt;
+    animation-duration: 3s;
+}
+@keyframes BackTxt {
+  0%   {left:25vw; top:15vh;}
+}
+.InTxt {
+  position: absolute;
+  top: 15vh;
+  left: 25vw;
+  font-size: 2em;
+  color: #333333;
+  animation-name: info;
+  animation-duration: 5s;
+}
+@keyframes info {
+  0%   {left:-500px; top:15vh;}
+}
+.footer{
+  display: flex;
+  height: 50px;
+  margin-top: -50px;
+  justify-content: center;
+  flex-shrink: 0;
+  align-content: flex-end;
+  align-items: center;
+  background-color: #333333;
+  color: #f2f2f2;
+  text-align: center;
+  min-width: 100vw;
+}
+.current{
+  background: #848483;
+}
+
+table.GeneratedTable {
+  width: 69%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #7d7d96;
+  border-style: solid;
+  color: #000000;
+  text-align: center;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #7d7d96;
+  border-style: solid;
+  padding: 4px;
+}
+
+table.GeneratedTable thead {
+  background-color: #c0deb2;
+}
+
+.password{
+  -webkit-text-security: disc;
+}
+
+.login_form
+{
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  min-width: 20vw;
+  padding: 2em;
+
+}
+
+.login_form > input{
+  min-width: 8em;
+  padding: 5px;
+  margin: 5px;
+}
+
+.wymiar{
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.wymiar:hover{
+  background-color: #ce0606;
+  cursor: pointer;
+}
+.wymiar:active{
+  box-shadow: none;
+  top: 5px;
+}
